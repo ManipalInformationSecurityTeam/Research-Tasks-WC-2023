@@ -19,9 +19,6 @@ def gronsfeld_encrypt(plaintext, key):
             
     return ciphertext
 
-
-#Decryption
-
 def gronsfeld_decrypt(ciphertext, key):
     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     plaintext = ''
@@ -41,11 +38,10 @@ def gronsfeld_decrypt(ciphertext, key):
             
     return plaintext
 
-#Test
+
 plaintext= input("Enter the plain text: ")
 key=input("Enter the key: ")
 print(gronsfeld_encrypt(plaintext,key))
-
 ciphertext= input("Enter the cipher text: ")
 key=input("Enter the key: ")
 print(gronsfeld_decrypt(ciphertext,key))
